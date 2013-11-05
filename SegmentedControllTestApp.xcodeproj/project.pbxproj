@@ -21,6 +21,8 @@
 		D0AB18A31828C79B00C5886C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AB18851828C79B00C5886C /* UIKit.framework */; };
 		D0AB18AB1828C79B00C5886C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0AB18A91828C79B00C5886C /* InfoPlist.strings */; };
 		D0AB18AD1828C79B00C5886C /* SegmentedControllTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AB18AC1828C79B00C5886C /* SegmentedControllTestAppTests.m */; };
+		D0AB18B81828C7AE00C5886C /* CJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AB18B71828C7AE00C5886C /* CJSegmentedControl.m */; };
+		D0AB18BB1828CD8900C5886C /* CJSegmentedControlSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AB18BA1828CD8900C5886C /* CJSegmentedControlSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		D0AB18A81828C79B00C5886C /* SegmentedControllTestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SegmentedControllTestAppTests-Info.plist"; sourceTree = "<group>"; };
 		D0AB18AA1828C79B00C5886C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0AB18AC1828C79B00C5886C /* SegmentedControllTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentedControllTestAppTests.m; sourceTree = "<group>"; };
+		D0AB18B61828C7AE00C5886C /* CJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJSegmentedControl.h; path = ../CJSegmentedControl.h; sourceTree = "<group>"; };
+		D0AB18B71828C7AE00C5886C /* CJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJSegmentedControl.m; path = ../CJSegmentedControl.m; sourceTree = "<group>"; };
+		D0AB18B91828CD8900C5886C /* CJSegmentedControlSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSegmentedControlSlider.h; sourceTree = "<group>"; };
+		D0AB18BA1828CD8900C5886C /* CJSegmentedControlSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSegmentedControlSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 		D0AB18871828C79B00C5886C /* SegmentedControllTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				D0AB18B61828C7AE00C5886C /* CJSegmentedControl.h */,
+				D0AB18B71828C7AE00C5886C /* CJSegmentedControl.m */,
+				D0AB18B91828CD8900C5886C /* CJSegmentedControlSlider.h */,
+				D0AB18BA1828CD8900C5886C /* CJSegmentedControlSlider.m */,
 				D0AB18901828C79B00C5886C /* CJAppDelegate.h */,
 				D0AB18911828C79B00C5886C /* CJAppDelegate.m */,
 				D0AB18931828C79B00C5886C /* Main.storyboard */,
@@ -200,6 +210,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Christian Sheehan";
 				TargetAttributes = {
+					D0AB187D1828C79B00C5886C = {
+						DevelopmentTeam = D5U73G97HY;
+					};
 					D0AB189E1828C79B00C5886C = {
 						TestTargetID = D0AB187D1828C79B00C5886C;
 					};
@@ -250,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AB18BB1828CD8900C5886C /* CJSegmentedControlSlider.m in Sources */,
 				D0AB188E1828C79B00C5886C /* main.m in Sources */,
+				D0AB18B81828C7AE00C5886C /* CJSegmentedControl.m in Sources */,
 				D0AB18921828C79B00C5886C /* CJAppDelegate.m in Sources */,
 				D0AB18981828C79B00C5886C /* CJViewController.m in Sources */,
 			);
@@ -379,10 +394,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SegmentedControllTestApp/SegmentedControllTestApp-Prefix.pch";
 				INFOPLIST_FILE = "SegmentedControllTestApp/SegmentedControllTestApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +410,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SegmentedControllTestApp/SegmentedControllTestApp-Prefix.pch";
 				INFOPLIST_FILE = "SegmentedControllTestApp/SegmentedControllTestApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
