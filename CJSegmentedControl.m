@@ -1,4 +1,4 @@
-//
+                                //
 //  CJSegmentedControl.m
 //  SegmentedControllTestApp
 //
@@ -28,6 +28,8 @@
     
     self.labels = @[@"First", @"Second", @"Third"];
     
+    [self drawLabels:self.labels];
+
     self.slider = [self createSliderWithNumberOfSections:self.numberOfSections withLabels:self.labels];
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
@@ -39,7 +41,6 @@
     
     [self addSnapToPosition:1 of:self.numberOfSections];
     
-    [self drawLabels:self.labels];
 }
 
 - (void)drawLabels:(NSArray *)labels
@@ -98,11 +99,11 @@
 {
     CJSegmentedControlSlider *slider = [CJSegmentedControlSlider new];
     
-    CGRect sliderFrame = CGRectMake(0, 0, self.frame.size.width/numberOfSections, self.frame.size.height);
+    CGRect sliderFrame = CGRectMake(0, 1, self.frame.size.width/numberOfSections, self.frame.size.height - 2);
     
     [slider setFrame:sliderFrame];
     [slider setNumberOfSections:numberOfSections];
-    [slider setLabels:labels];
+    [slider setLabelTitles:labels];
     
     [self addSubview:slider];
     return slider;
@@ -123,16 +124,17 @@
 
 - (void)addSnapToPosition:(int)position of:(int)numberOfPostions
 {
+    [self.animator removeAllBehaviors];
     CGFloat widthOfSlider = (self.frame.size.width / numberOfPostions);
     CGPoint centerOfSection = CGPointMake(widthOfSlider/2 + position * widthOfSlider, self.frame.size.height/2);
     
     UISnapBehavior *snapBehaviour = [[UISnapBehavior alloc] initWithItem:self.slider snapToPoint:centerOfSection];
     snapBehaviour.damping = 0.5f;
     [self.animator addBehavior:snapBehaviour];
-    
-    snapBehaviour.action = ^{
-        [self.slider updateText];
-    };
+//    
+//    snapBehaviour.action = ^{
+//        [self.slider updateText];
+//    };
     
     UIDynamicItemBehavior *dynamicItem = [[UIDynamicItemBehavior alloc] initWithItems:@[self.slider]];
     dynamicItem.allowsRotation = NO;

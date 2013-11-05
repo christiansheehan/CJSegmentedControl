@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>720DE76E-B0F3-4E19-A656-0A137909070F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SegmentedControllTestApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3BE190D3-7A90-4214-B696-54482E5106E1</key>
+		<string>ssh://github.com/christiansheehan/CJSegmentedControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SegmentedControllTestApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3BE190D3-7A90-4214-B696-54482E5106E1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/christiansheehan/CJSegmentedControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3BE190D3-7A90-4214-B696-54482E5106E1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3BE190D3-7A90-4214-B696-54482E5106E1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CJSegmentedControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>

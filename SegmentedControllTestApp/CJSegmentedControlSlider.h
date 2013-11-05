@@ -11,7 +11,7 @@
 @interface CJSegmentedControlSlider : UIView
 
 @property (assign, nonatomic) int numberOfSections;
-@property (strong, nonatomic) NSArray *labels;
+@property (strong, nonatomic) NSArray *labelTitles;
 
 - (void)updateText;
 

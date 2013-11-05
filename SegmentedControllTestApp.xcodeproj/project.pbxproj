@@ -211,7 +211,7 @@
 				ORGANIZATIONNAME = "Christian Sheehan";
 				TargetAttributes = {
 					D0AB187D1828C79B00C5886C = {
-						DevelopmentTeam = D5U73G97HY;
+						DevelopmentTeam = 9K5532B8B2;
 					};
 					D0AB189E1828C79B00C5886C = {
 						TestTargetID = D0AB187D1828C79B00C5886C;
@@ -482,6 +482,7 @@
 				D0AB18B21828C79B00C5886C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0AB18B31828C79B00C5886C /* Build configuration list for PBXNativeTarget "SegmentedControllTestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				D0AB18B51828C79B00C5886C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
